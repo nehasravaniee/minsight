@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        *{
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background: url('background-image.jpg') no-repeat center center/cover;">
+    <div style="display: flex; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <div style="background-color: #0f2e5a; color: white; padding: 40px; width: 300px;">
+            <h1 style="margin: 0 0 20px;">Join Us</h1>
+            <p>Create an account to track your progress and empower your mental wellness.</p>
+        </div>
+        <div style="background-color: white; padding: 40px; width: 300px;">
+            <h2 style="margin: 0 0 20px;">Sign Up</h2>
+            <form id="signup-form" action="/signup" method="post">
+                <label for="name" style="display: block; margin-bottom: 5px;">Name</label>
+                <input type="text" name="name" id="username" placeholder="Name" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+                <label for="password" style="display: block; margin-bottom: 5px;">Password</label>
+                <input type="password" name="password" placeholder="Password" required style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px;">
+                <button type="submit" style="width: 100%; padding: 10px; background-color: #0f2e5a; color: white; border: none; border-radius: 4px; cursor: pointer;">Sign Up</button>
+            </form>
+            <p style="margin-top: 20px; text-align: center;">Already have an account? <a href="/login" style="color: #0066cc;">Login</a></p>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            const username = document.getElementById('username').value;
+            localStorage.setItem('username', username);
+        });
+    </script>
+</body>
+</html>

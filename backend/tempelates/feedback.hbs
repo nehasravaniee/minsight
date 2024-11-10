@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Received</title>
+    <link rel="stylesheet" href="page.css"> <!-- Include your CSS file -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0f2e5a;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .message-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            text-align: center;
+        }
+        .message-box h1 {
+            color: #0f2e5a;
+        }
+        .message-box p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="page.html" class="logo">
+                <img src="logo1.jpg" alt="logo">
+                <h2>MindSight</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="q.html">Quiz</a></li>
+                <li><a href="ac.html">Activity Suggestions</a></li>
+                <li><a href="a.html">Affirmations</a></li>
+                <li><a href="med.html">Meditation Timers</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="message-box">
+        <h1>Thank You!</h1>
+        <p>{{message}}</p>
+    </div>
+</body>
+</html>

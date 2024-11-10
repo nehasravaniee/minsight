@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="page.css">
+    <style>
+        body {
+            height: 100vh;
+            background-image: url('contactbg.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="page.html" class="logo">
+                <img src="logo1.jpg" alt="logo">
+                <h2>MindSight</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="q.html">Quiz</a></li>
+                <li><a href="ac.html">Activity Suggestions</a></li>
+                <li><a href="a.html">Affirmations</a></li>
+                <li><a href="med.html">Meditation Timers</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="display: flex; justify-content: center; align-items: center; height: 80vh;">
+        <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 500px; width: 100%;">
+            <form action="/contact" method="post">
+                <label for="name" style="margin-bottom: 5px; font-weight: bold;">Name:</label>
+                <input type="text" id="name" name="name" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 100%;">
+                
+                <label for="message" style="margin-bottom: 5px; font-weight: bold;">Message:</label>
+                <textarea id="message" name="message" rows="4" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 100%;"></textarea>
+                
+                <button type="submit" style="padding: 10px; border: none; border-radius: 5px; background-color: #0f2e5a; color: white; font-size: 16px; cursor: pointer; margin-top: 10px;">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url("Screenshot\ \(200\).png") center/cover no-repeat;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #fff6f6;
+    font-size: 3em; /* Adjust the font size as needed */
+    font-family: 'Roboto', Arial, sans-serif; /* Adjust font family for heading */
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #faefef;
+    font-size: 2em; /* Adjust the font size as needed */
+    font-family: 'Roboto', Arial, sans-serif; /* Adjust font family for heading */
+}
+
+.timer-settings {
+    margin-bottom: 20px;
+}
+
+#minutes {
+    width: 80px; /* Increased width for the minute input */
+    padding: 10px; /* Increased padding for better touch interaction */
+    margin-right: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 24px; /* Increased padding for buttons */
+    margin: 5px;
+    background: #28a745; /* Green color for start and stop buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+.timer-display {
+    font-size: 10em;
+    margin-top: 50px;
+    color: #f5efef;
+    text-shadow: 1px 1px 2px rgba(242, 245, 243, 0.981); /* Optional text shadow */
+}
